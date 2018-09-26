@@ -28,7 +28,8 @@
         color: grey;
         -webkit-transition: 1s;
         -o-transition: 1s;
-        transition: 1s; }
+        transition: 1s;
+        top: 20px; }
       #menu nav ul li a:hover {
         color: white; }
 
@@ -57,6 +58,138 @@ a#toggle:hover span {
   background-position: center;
   background-size: cover;
   height: 100vh; }
+  #homepage_container header > img {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 200px; }
+  #homepage_container header .header_content {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    #homepage_container header .header_content .phone_content {
+      width: 25%;
+      height: 100%;
+      position: relative; }
+      #homepage_container header .header_content .phone_content p {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        text-align: center;
+        color: #EAE5AD;
+        font-family: 'mixtape', serif; }
+      #homepage_container header .header_content .phone_content .phone {
+        width: 100%;
+        position: relative; }
+    #homepage_container header .header_content .scroll {
+      height: 30px;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      color: white;
+      text-align: center; }
+      #homepage_container header .header_content .scroll p {
+        font-size: 0.8rem; }
+      #homepage_container header .header_content .scroll img {
+        height: 54px;
+        width: 33px; }
+    #homepage_container header .header_content .wheel {
+      width: 40%;
+      -ms-flex-item-align: center;
+      align-self: center;
+      position: relative; }
+      #homepage_container header .header_content .wheel img {
+        width: 100%;
+        position: relative; }
+      #homepage_container header .header_content .wheel a img.images1 {
+        position: absolute;
+        top: -10%;
+        left: 45%;
+        width: 10%; }
+      #homepage_container header .header_content .wheel a img.images2 {
+        position: absolute;
+        top: 17%;
+        right: 3%;
+        width: 13%; }
+      #homepage_container header .header_content .wheel a img.images3 {
+        position: absolute;
+        bottom: 24%;
+        right: 0;
+        width: 13%; }
+      #homepage_container header .header_content .wheel a img.images4 {
+        position: absolute;
+        bottom: -7%;
+        left: 43%;
+        width: 15%; }
+      #homepage_container header .header_content .wheel a img.images5 {
+        position: absolute;
+        bottom: 26%;
+        left: 0;
+        width: 13%; }
+      #homepage_container header .header_content .wheel a img.images6 {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 13%; }
+      #homepage_container header .header_content .wheel h2 {
+        position: absolute;
+        margin-bottom: 50px;
+        top: 40%;
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+
+#homepage_container main {
+  background: #F8F5E4;
+  overflow-x: hidden;
+  position: relative;
+  height: 280vh; }
+  #homepage_container main img.leaf {
+    width: 100vw; }
+  #homepage_container main img.leaf2 {
+    width: 100vw;
+    position: absolute;
+    bottom: 0; }
+  #homepage_container main img.creepers {
+    width: 115vw;
+    position: absolute;
+    top: 12%;
+    left: -10vw; }
+  #homepage_container main img.picto1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 25%; }
+  #homepage_container main img.picto2 {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    width: 20%; }
+  #homepage_container main img.picto3 {
+    position: absolute;
+    top: 67%;
+    left: 62%;
+    width: 25%; }
 
 * {
   margin: 0;
@@ -64,8 +197,13 @@ a#toggle:hover span {
 
 body {
   margin: 0;
-  background: #00b894;
   font-family: 'Roboto', sans-serif; }
   body a {
     text-decoration: none;
     color: white; }
+
+@font-face {
+  font-family: 'mixtape';
+  src: url("../font/MIXTMK_T.otf");
+  font-weight: normal;
+  font-style: normal; }

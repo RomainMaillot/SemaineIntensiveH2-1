@@ -8,11 +8,16 @@
 }
 body{
     margin:0;
-    background: #00b894;
     font-family: 'Roboto', sans-serif;
     a
     {
       text-decoration: none;
       color: white;
     }
+}
+@font-face {
+font-family: 'mixtape';
+src: url('../font/MIXTMK_T.otf');
+font-weight: normal;
+font-style: normal;
 }
