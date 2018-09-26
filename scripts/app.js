@@ -1,5 +1,5 @@
 let bouton = document.getElementById('toggle'), menu = document.getElementById('menu'), count = 0,imgs = document.querySelectorAll('[class*="images"]'),title = document.querySelector('h2'),words = ["water","learn","grow","protection","care","heal"],
-lefts = ["30","30","30","10","30","30"]
+lefts = ["30","30","30","10","30","30"], flowers = document.querySelectorAll('[class*="flower"]')
 
 bouton.addEventListener(
   "click",
@@ -26,4 +26,14 @@ for(let i = 0;i<imgs.length;i++)
         setTimeout(function(){ title.style.opacity = '1' }, 500)
       }
   )
+}
+
+  tilt()
+
+function tilt()
+{
+  for (let i = 0; i < flowers.length; i++) {
+    setInterval(function(){flowers[i].style.transform = 'rotate(0.01turn)'},1000)
+    setInterval(function(){flowers[i].style.transform = 'rotate(-0.01turn)'},2000)
+  }
 }
