@@ -6,7 +6,7 @@
   top: 0;
   background: black;
   opacity: 0.8;
-  z-index: -1;
+  z-index: 100;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
@@ -25,7 +25,10 @@
     #menu nav ul li {
       margin: 50px 0; }
       #menu nav ul li a {
-        color: grey; }
+        color: grey;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
       #menu nav ul li a:hover {
         color: white; }
 
