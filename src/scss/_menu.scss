@@ -6,7 +6,7 @@
   top: 0;
   background: black;
   opacity: 0.8;
-  z-index: -1;
+  z-index: 100;
   transition: all 1s;
   transform: translateX(100%);
   nav
@@ -26,6 +26,7 @@
       a
       {
         color: grey;
+        transition: 1s;
       }
       a:hover
       {
