@@ -2,6 +2,547 @@
 {
   header
   {
-    
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    &>img
+    {
+      position: relative;
+      top: 20px;
+      left: 50px;
+      width: 200px;
+      @media screen and (max-width: $break-small){
+          width: 50px;
+        }
+    }
+    .header_content
+    {
+      margin-top: 100px;
+      margin-left: 10%;
+      margin-right: 10%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @media screen and (max-width: $break-medium){
+          flex-direction: column;
+          align-items: center;
+          height: 80vh;
+        }
+      .phone_content
+      {
+        width: 25%;
+        height: 100%;
+        position: relative;
+        @media screen and (max-width: $break-medium){
+            width: 30%;
+          }
+        @media screen and (max-width: $break-small){
+            width: 40%;
+          }
+        p
+        {
+          position: absolute;
+          top: 40%;
+          left: 20%;
+          text-align: center;
+          color: #EAE5AD;
+          font-family: 'mixtape', serif;
+          @media screen and (max-width: $break-medium){
+              top: 27%;
+              left: 7%;
+            }
+          @media screen and (max-width: $break-small){
+              top: 20%;
+              font-size: 0.5rem;
+              left: 16%;
+            }
+        }
+        .phone
+        {
+          width: 100%;
+          position: relative;
+        }
+      }
+      .scroll
+      {
+        height: 30px;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        @media screen and (max-width: $break-medium){
+            display: none;
+          }
+        p
+        {
+          font-size: 0.8rem;
+        }
+        img
+        {
+          height: 54px;
+          width: 33px;
+        }
+      }
+      .wheel
+      {
+        width: 40%;
+        align-self: center;
+        position: relative;
+        @media screen and (max-width: $break-small){
+            width: 60%;
+          }
+        .big
+        {
+          transform: scale(1.1);
+        }
+        img
+        {
+          width: 100%;
+          position: relative;
+        }
+        a
+        {
+          img.images1
+          {
+            position: absolute;
+            top: -10%;
+            left: 45%;
+            width: 10%;
+            transition: transform 0.5s;
+          }
+          img.images2
+          {
+            position: absolute;
+            top: 17%;
+            right: 3%;
+            width: 13%;
+            transition: transform 0.5s;
+          }
+          img.images3
+          {
+            position: absolute;
+            bottom: 24%;
+            right: 0;
+            width: 13%;
+            transition: transform 0.5s;
+          }
+          img.images4
+          {
+            position: absolute;
+            bottom: -7%;
+            left: 43%;
+            width: 15%;
+            transition: transform 0.5s;
+          }
+          img.images5
+          {
+            position: absolute;
+            bottom: 26%;
+            left: 0;
+            width: 13%;
+            transition: transform 0.5s;
+          }
+          img.images6
+          {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 13%;
+            transition: transform 0.5s;
+          }
+        }
+        h2
+        {
+          position: absolute;
+          margin-bottom: 50px;
+          top: 40%;
+          text-align: center;
+          margin: 0 auto;
+          color: white;
+          font-size: 4rem;
+          text-transform: uppercase;
+          transition: 0.5s;
+          @media screen and (max-width: $break-medium){
+              font-size: 2rem;
+            }
+          @media screen and (max-width: $break-small){
+              font-size: 1.5rem;
+            }
+        }
+      }
+    }
+  }
+  main
+  {
+    div.axes
+    {
+      background: url('../images/axes_background.jpg');
+      background-size: 380vh;
+      background-position: right;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+      height: 200vh;
+      @media screen and (max-width: $break-medium){
+          height: 100vh;
+        }
+      h2
+      {
+        font-family: 'mixtape', serif;
+        padding-top: 5vh;
+        font-size: 2rem;
+        width: 250px;
+        margin: 0 auto;
+        @media screen and (max-width: $break-medium){
+            font-size: 3rem;
+            width: 300px;
+          }
+        @media screen and (max-width: $break-small){
+            font-size: 2rem;
+            width: 200px;
+          }
+      }
+      img.picto1
+      {
+        position: absolute;
+        top: 15%;
+        left: 60%;
+        width: 20%;
+        @media screen and (max-width: $break-medium){
+            left: 65%;
+          }
+        @media screen and (max-width: $break-small){
+            left: 70%;
+          }
+      }
+      img.picto2
+      {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        width: 25%;
+        z-index: 1;
+      }
+      img.picto3
+      {
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        width: 25%;
+        @media screen and (max-width: $break-medium){
+            left: 55%;
+          }
+      }
+      img.picto_leaf
+      {
+        position: absolute;
+        top: 22%;
+        left: 2%;
+        width: 20%;
+      }
+      img.picto_leaf2
+      {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 20%;
+        @media screen and (max-width: $break-small){
+            top: 18%;
+          }
+      }
+      img.picto_leaf3
+      {
+        position: absolute;
+        top: 45%;
+        right: 8%;
+        width: 20%;
+      }
+      img.picto_leaf4
+      {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        width: 20%;
+      }
+      img.picto_leaf5
+      {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 20%;
+      }
+      img.picto_leaf6
+      {
+        position: absolute;
+        top: 70%;
+        left: 8%;
+        width: 20%;
+      }
+      h3
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        transform: translateX(-280%);
+        left: 35%;
+        top: 25%;
+        box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        @media screen and (max-width: $break-medium){
+            top: 20%;
+          }
+        @media screen and (max-width: $break-small){
+            font-size: 0.8rem;
+          }
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 20%;
+          height: 1px;
+          bottom: 50%;
+          left: 100%;
+          border-bottom: 1px solid #707070;
+        }
+      }
+      #animate1
+      {
+        transition: transform 1s;
+      }
+      #animate2
+      {
+        transition: transform 1s;
+      }
+      #animate3
+      {
+        transition: transform 1s;
+      }
+      .enter
+      {
+        transform: translateX(-10%);
+      }
+      #trigger1
+      {
+        position: absolute;
+        top: 20%;
+      }
+      #trigger2
+      {
+        position: absolute;
+        top: 48%;
+      }
+      #trigger3
+      {
+        position: absolute;
+        top: 65%;
+      }
+      h4
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(250%);
+        box-shadow: -5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        @media screen and (max-width: $break-small){
+            font-size: 0.8rem;
+          }
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 40%;
+          height: 1px;
+          bottom: 50%;
+          left: -40%;
+          border-bottom: 1px solid #707070;
+        }
+      }
+      h5
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        left: 30%;
+        top: 75%;
+        text-align: center;
+        transform: translateY(200%);
+        box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        @media screen and (max-width: $break-medium){
+            left: 35%;
+            transform: translateY(300%);
+          }
+          @media screen and (max-width: $break-small){
+              font-size: 0.8rem;
+              transform: translateY(450%);
+            }
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 10%;
+          height: 1px;
+          bottom: 50%;
+          left: 100%;
+          border-bottom: 1px solid #707070;
+        }
+      }
+    }
+    div.kickstarter
+    {
+      padding-top: 8vh;
+      height: 80vh;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      @media screen and (max-width: $break-medium){
+          height: 60vh;
+        }
+      .kickstarter_logo
+      {
+        width: 600px;
+        margin: 0 auto;
+        @media screen and (max-width: $break-small){
+            width: 300px;
+          }
+        &>img
+        {
+          @media screen and (max-width: $break-small){
+              width: 300px;
+            }
+        }
+      }
+      img.left_fern
+      {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 75%;
+        @media screen and (max-width: $break-medium){
+            width: 120%;
+          }
+      }
+      img.right_fern
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 75%;
+        @media screen and (max-width: $break-medium){
+            width: 120%;
+          }
+      }
+      #animate4
+      {
+        transition: transform 2s;
+      }
+      #animate5
+      {
+        transition: transform 2s;
+      }
+      .open
+      {
+        transform: translateX(-30%) translateY(28%) scale(0.8);
+      }
+      .open1
+      {
+        transform: translateX(30%) translateY(28%) scale(0.8);
+      }
+      .square_background
+      {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+      }
+      .loading_bar
+      {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        h2
+        {
+          align-self: center;
+          padding-bottom: 20px;
+        }
+        h3
+        {
+          align-self: flex-end;
+          position: absolute;
+          top: 28%;
+        }
+        a
+        {
+          align-self: center;
+          position: absolute;
+          top: 55%;
+          background: #EAE5AD;
+          border: 2px solid #707070;
+          border-radius: 5px;
+          padding: 15px 20px;
+          color: #707070;
+          transition: all 1s;
+          &:hover
+          {
+            background: #707070;
+            color: #EAE5AD;
+          }
+        }
+        @media screen and (max-width: $break-medium){
+            font-size: 0.8rem;
+          }
+        @media screen and (max-width: $break-small){
+            font-size: 0.5rem;
+          }
+        .loading_bar_image
+        {
+          img:nth-child(1)
+          {
+            width: 100%;
+            position: absolute;
+            left: 0;
+          }
+          img:nth-child(2)
+          {
+            width: 80%;
+            height: 6vh;
+            left: 0;
+            position: absolute;
+            @media screen and (max-width: $break-medium){
+                height: 8%;
+              }
+            @media screen and (max-width: $break-small){
+                height: 5%;
+              }
+          }
+          img:nth-child(3)
+          {
+            width: 15%;
+            position: absolute;
+            top: 2%;
+            left: 70%;
+            @media screen and (max-width: $break-medium){
+                top: 4%;
+              }
+            @media screen and (max-width: $break-small){
+                top: 12%;
+              }
+          }
+        }
+      }
+    }
   }
 }

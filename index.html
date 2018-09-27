@@ -5,20 +5,103 @@
     <title>Modèle de page</title>
     <meta name="description" content="Ceci est la description de ma page">
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div id="homepage_container">
-      <a href="#" id="toggle"><img src="images/leaf.png" alt=""><span>menu</span></a>
+      <a href="#" id="toggle"><img src="images/leaf.png" alt="leaf logo"><span>menu</span></a>
       <div id="menu" class="none">
         <nav>
           <ul>
             <li><a href="#">About us</a></li>
-            <li><a href="#">The project</a></li>
-            <li><a href="#">Kickstarter</a></li>
+            <li><a href="pages/project.html">The project</a></li>
+            <li><a href="https://www.kickstarter.com/projects/benkling/dryp-an-app-that-keeps-your-plants-alive-and-happy?ref=discovery"target="_blank">Kickstarter</a></li>
           </ul>
         </nav>
       </div>
+      <header>
+        <img src="images/logo.png" alt="DRYP logo">
+        <div class="header_content">
+          <div class="phone_content">
+            <img class="phone" src="images/phone.png" alt="iphoneX mockup">
+            <p>« To never ever kill <br> your plants »</p>
+          </div>
+          <div class="scroll">
+            <img src="images/scroll.svg" alt="mouse logo">
+            <p>scroll</p>
+          </div>
+          <div class="wheel">
+            <img src="images/wheel.png" alt="wheel background">
+            <a href="#"><img src="images/drop.png" alt="drop" class="images1"></a>
+            <a href="#"><img src="images/book.png" alt="book" class="images2"></a>
+            <a href="#"><img src="images/tree.png" alt="tree" class="images3"></a>
+            <a href="#"><img src="images/sun.png" alt="sun" class="images4"></a>
+            <a href="#"><img src="images/hand.png" alt="hand" class="images5"></a>
+            <a href="#"><img src="images/cross.png" alt="cross" class="images6"></a>
+            <h2>&nbsp;</h2>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="axes">
+          <h2>The project</h2>
+          <img class="picto1" src="images/picto_watering.png" alt="postit water">
+          <img class="picto2" src="images/picto_doctor.png" alt="picture of plantys">
+          <img class="picto3" src="images/picto_tutor.png" alt="picture of a doctor">
+          <img class="picto_leaf2" src="images/picto_leaf2.png" alt="plant">
+          <img class="picto_leaf" src="images/picto_leaf.png" alt="plant">
+          <img class="picto_leaf4" src="images/picto_leaf4.png" alt="plant">
+          <img class="picto_leaf3" src="images/picto_leaf3.png" alt="plant">
+          <img class="picto_leaf6" src="images/picto_leaf6.png" alt="plant">
+          <img class="picto_leaf5" src="images/picto_leaf5.png" alt="plant">
+          <div class="spacer s2"></div>
+      		<div id="trigger1" class="spacer s0"></div>
+          <h3 id="animate1">Watering <br> reminder</h3>
+          <div class="spacer s2"></div>
+          <div class="spacer s2"></div>
+      		<div id="trigger2" class="spacer s0"></div>
+          <h4 id="animate2">Plant <br> doctor</h4>
+          <div class="spacer s2"></div>
+          <div class="spacer s2"></div>
+      		<div id="trigger3" class="spacer s0"></div>
+          <h5 id="animate3">Plant <br> tutor</h5>
+          <div class="spacer s2"></div>
+        </div>
+        <div class="kickstarter">
+          <div class="kickstarter_logo">
+            <img src="images/kickstarter_logo.png" alt="">
+          </div>
+          <div class="spacer s2"></div>
+      		<div id="trigger4" class="spacer s0"></div>
+          <img id="animate4" class="left_fern" src="images/left_fern.png" alt="">
+          <img id="animate5" class="right_fern" src="images/right_fern.png" alt="">
+          <div class="spacer s2"></div>
+          <img class="square_background" src="images/square.png" alt="square background">
+          <div class="loading_bar">
+            <h2>Direct donations</h2>
+            <div class="loading_bar_image">
+              <img src="images/bar_empty.png" alt="load bar empty">
+              <img src="images/bar_load.png" alt="load bar marker">
+              <img src="images/leaf_bar.png" alt="load bar full">
+            </div>
+            <h3>30 000$ / 35 000$</h3>
+            <a href="https://www.kickstarter.com/projects/benkling/dryp-an-app-that-keeps-your-plants-alive-and-happy?ref=discovery"target="_blank">Join the kickstarteam and received a part of dryp!</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="contact">
+          <a href="#"><img src="images/facebook.png" alt="logo facebook"></a>
+          <a href="#"><img src="images/twitter.png" alt="logo twitter"></a>
+          <a href="#"><img src="images/instagram.svg" alt="logo instagram"></a>
+          <p>Contact us</p>
+        </div>
+        <img class="logo" src="images/logo.png" alt="DRYP logo">
+        <p>NewsLetter</p>
+      </footer>
     </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
     <script type="text/javascript" src="scripts/app.js">
 
     </script>
