@@ -250,15 +250,74 @@ a#toggle:hover span {
   #homepage_container main h3 {
     font-family: 'mixtape', serif;
     position: absolute;
-    left: 70%;
-    top: 22%;
-    -webkit-transform: rotate(-0.1turn);
-    -ms-transform: rotate(-0.1turn);
-    transform: rotate(-0.1turn);
     font-size: 2rem;
     background: rgba(0, 123, 121, 0.5);
     border-radius: 50%;
-    padding: 8% 6%; }
+    padding: 8% 6%;
+    -webkit-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    transform: translateX(150%);
+    left: 70%;
+    top: 22%; }
+  #homepage_container main #animate1 {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+  #homepage_container main #animate2 {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+  #homepage_container main #animate3 {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+  #homepage_container main .enter {
+    -webkit-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    transform: translateX(-10%);
+    -webkit-transform: rotate(-0.1turn);
+    -ms-transform: rotate(-0.1turn);
+    transform: rotate(-0.1turn); }
+  #homepage_container main #trigger1 {
+    position: absolute;
+    top: 20%; }
+  #homepage_container main #trigger2 {
+    position: absolute;
+    top: 48%; }
+  #homepage_container main #trigger3 {
+    position: absolute;
+    top: 65%; }
+  #homepage_container main h4 {
+    font-family: 'mixtape', serif;
+    position: absolute;
+    font-size: 2rem;
+    background: rgba(0, 123, 121, 0.5);
+    border-radius: 50%;
+    padding: 6%;
+    left: 2%;
+    top: 50%;
+    -webkit-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    transform: translateX(-150%); }
+  #homepage_container main h5 {
+    font-family: 'mixtape', serif;
+    position: absolute;
+    font-size: 2rem;
+    background: rgba(0, 123, 121, 0.5);
+    border-radius: 50%;
+    padding: 7% 6%;
+    left: 40%;
+    top: 68%;
+    text-align: center;
+    -webkit-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    transform: translateY(150%); }
 
 * {
   margin: 0;
