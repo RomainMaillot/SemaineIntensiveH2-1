@@ -1,0 +1,28 @@
+footer
+{
+  display: flex;
+  flex-direction: row;
+  background: #343434;
+  color: white;
+  position: relative;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  img.logo
+  {
+    width: 10%;
+    position: absolute;
+  }
+  .contact
+  {
+    display: flex;
+    flex-direction: row;
+    width: 14%;
+    justify-content: space-between;
+    img
+    {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

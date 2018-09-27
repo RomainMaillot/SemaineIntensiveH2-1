@@ -1,8 +1,9 @@
-$break-small: 380px;
+$break-small: 400px;
 $break-medium: 1024px;
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "menu";
 @import "homepage";
+@import "footer";
 
 *{
     margin:0;

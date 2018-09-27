@@ -62,9 +62,6 @@ a#toggle:hover span {
   background-position: center;
   background-size: cover;
   height: 100vh; }
-  @media screen and (max-width: 1024px) {
-    #homepage_container header {
-      height: 100vh; } }
   #homepage_container header > img {
     position: relative;
     top: 20px;
@@ -140,6 +137,9 @@ a#toggle:hover span {
       -ms-flex-item-align: center;
       align-self: center;
       position: relative; }
+      @media screen and (max-width: 400px) {
+        #homepage_container header .header_content .wheel {
+          width: 60%; } }
       #homepage_container header .header_content .wheel .big {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -222,6 +222,9 @@ a#toggle:hover span {
         @media screen and (max-width: 1024px) {
           #homepage_container header .header_content .wheel h2 {
             font-size: 2.8rem; } }
+        @media screen and (max-width: 400px) {
+          #homepage_container header .header_content .wheel h2 {
+            font-size: 3rem; } }
 
 #homepage_container main div.axes {
   background: url("../images/axes_background.jpg");
@@ -448,6 +451,98 @@ a#toggle:hover span {
     -webkit-transform: translateX(30%) translateY(28%) scale(0.8);
     -ms-transform: translateX(30%) translateY(28%) scale(0.8);
     transform: translateX(30%) translateY(28%) scale(0.8); }
+  #homepage_container main div.kickstarter .square_background {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; }
+  #homepage_container main div.kickstarter .loading_bar {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #homepage_container main div.kickstarter .loading_bar h2 {
+      -ms-flex-item-align: center;
+      align-self: center;
+      padding-bottom: 20px; }
+    #homepage_container main div.kickstarter .loading_bar h3 {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      position: absolute;
+      top: 28%; }
+    #homepage_container main div.kickstarter .loading_bar a {
+      -ms-flex-item-align: center;
+      align-self: center;
+      position: absolute;
+      top: 55%;
+      background: #EAE5AD;
+      border: 2px solid #707070;
+      border-radius: 5px;
+      padding: 15px 20px;
+      color: #707070; }
+    #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(1) {
+      width: 100%;
+      position: absolute; }
+    #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
+      width: 80%;
+      height: 6vh;
+      position: absolute; }
+      @media screen and (max-width: 1024px) {
+        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
+          height: 8%; } }
+    #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
+      width: 15%;
+      position: absolute;
+      top: 2%;
+      left: 70%; }
+      @media screen and (max-width: 1024px) {
+        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
+          top: 4%; } }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background: #343434;
+  color: white;
+  position: relative;
+  height: 10vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  footer img.logo {
+    width: 10%;
+    position: absolute; }
+  footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 14%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .contact img {
+      width: 20px;
+      height: 20px; }
 
 * {
   margin: 0;
