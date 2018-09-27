@@ -719,6 +719,40 @@ footer {
         top: 50%;
         -webkit-box-shadow: 8px 6px 15px 1px rgba(0, 0, 0, 0.2);
         box-shadow: 8px 6px 15px 1px rgba(0, 0, 0, 0.2); }
+    #project_container main #appinformations .app2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      width: 80%;
+      padding-top: 5%;
+      margin: 0 auto;
+      position: relative; }
+      #project_container main #appinformations .app2 img:nth-child(2) {
+        width: 50%;
+        height: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+      #project_container main #appinformations .app2 img:nth-child(3) {
+        position: absolute;
+        left: 70%;
+        top: 12%;
+        width: 20%;
+        height: 25%; }
+      #project_container main #appinformations .app2 p {
+        -ms-flex-item-align: center;
+        align-self: center;
+        background: #F5F5F5;
+        padding: 5% 6%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        -webkit-box-shadow: -3px 6px 15px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: -3px 6px 15px 1px rgba(0, 0, 0, 0.2); }
 
 * {
   margin: 0;
