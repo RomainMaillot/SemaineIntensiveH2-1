@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 100;
+  transition: all 1s;
+  transform: translateX(100%); }
+  #menu nav {
+    position: fixed;
+    width: 900px;
+    right: 20%;
+    bottom: 15%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8rem; }
+    #menu nav ul li {
+      margin: 50px 0; }
+      #menu nav ul li a {
+        color: grey;
+        transition: 1s; }
+      #menu nav ul li a:hover {
+        color: white; }
+
+a#toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+  z-index: 1000; }
+  a#toggle img {
+    width: 50px;
+    height: 52px; }
+  a#toggle span {
+    position: relative;
+    right: 15px;
+    top: -5px;
+    transition: 0.2s; }
+
+a#toggle:hover span {
+  opacity: 0; }
+
+#about-us_container {
+  background: white; }
+  #about-us_container .whoami {
+    color: black;
+    width: 50px;
+    height: 7000px; }
+  #about-us_container .why {
+    width: 50px;
+    height: 70px;
+    color: black; }
+  #about-us_container .contact {
+    color: black; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  background: #00b894;
+  font-family: 'Roboto', sans-serif; }
+  body a {
+    text-decoration: none;
+    color: white; }
+
+/*# sourceMappingURL=app.css.map */
