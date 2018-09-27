@@ -28,7 +28,7 @@ for(let i = 0;i<imgs.length;i++)
 }
 
 //responsive wheel
-if (document.documentElement.clientWidth <= 1024) {
+if (document.documentElement.clientWidth <= 1024 && document.querySelectorAll('#homepage_container').length==1) {
   window.onload = function () {
     setInterval(function(){
       if (counter<6) {
@@ -77,4 +77,19 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger4"})
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger4"})
         // trigger animation by adding a css class
         .setClassToggle("#animate5", "open1")
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger6"})
+        // trigger animation by adding a css class
+        .setClassToggle("#animate6", "turn")
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger7"})
+        // trigger animation by adding a css class
+        .setClassToggle("#animate7", "turn")
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger8"})
+        // trigger animation by adding a css class
+        .setClassToggle("#animate8", "turn")
         .addTo(controller);

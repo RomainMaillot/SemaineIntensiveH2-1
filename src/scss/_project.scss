@@ -13,12 +13,22 @@
       top: 20px;
       left: 50px;
       width: 200px;
+      @media screen and (max-width: $break-small){
+          width: 50px;
+        }
     }
     h2
     {
       margin-top: 10%;
       font-size: 4rem;
       text-align: center;
+      @media screen and (max-width: $break-medium){
+          margin-top: 40%;
+        }
+      @media screen and (max-width: $break-small){
+          font-size: 2rem;
+          margin-top: 80%;
+        }
     }
     #textdescription
     {
@@ -27,10 +37,17 @@
       text-align: center;
       margin: 3% auto ;
       height: 20%;
+      @media screen and (max-width: $break-small){
+          width: 70%;
+          height: 10%;
+        }
       p
       {
         margin-top: 3%;
         color: white;
+        @media screen and (max-width: $break-small){
+            font-size: 0.6rem;
+          }
       }
       img
       {
@@ -42,6 +59,9 @@
     .scroll {
       margin: 0 auto;
       width: 100px;
+      @media screen and (max-width: $break-medium){
+          display: none;
+        }
       p
       {
         font-size: 0.8rem;
@@ -64,6 +84,16 @@
     color: black;
     text-align: center;
     padding-top: 50px;
+    @media screen and (max-width: $break-medium){
+        height: 130vh;
+      }
+    @media screen and (max-width: $break-small){
+        height: 90vh;
+      }
+    .turn
+    {
+      transform: rotate(1turn);
+    }
     h3
     {
       background: white;
@@ -91,7 +121,7 @@
           width: 50%;
           height: 100%;
         }
-        img:nth-child(2)
+        img#animate6
         {
           position: absolute;
           left: 7%;
@@ -107,6 +137,21 @@
           left: 50%;
           top: 50%;
           box-shadow: 8px 6px 15px 1px rgba(0, 0, 0, 0.2);
+          @media screen and (max-width: $break-medium){
+              font-size: 0.6rem;
+            }
+          @media screen and (max-width: $break-small){
+              font-size: 0.2rem;
+            }
+        }
+        #trigger6
+        {
+          position: absolute;
+          top: -40%;
+        }
+        #animate6
+        {
+          transition: transform 2s;
         }
       }
       .app2
@@ -123,7 +168,7 @@
           height: 100%;
           justify-content: center;
         }
-        img:nth-child(3)
+        img#animate7
         {
           position: absolute;
           left: 70%;
@@ -140,6 +185,21 @@
           right: 50%;
           top: 50%;
           box-shadow: -3px 6px 15px 1px rgba(0, 0, 0, 0.2);
+          @media screen and (max-width: $break-medium){
+              font-size: 0.6rem;
+            }
+          @media screen and (max-width: $break-small){
+              font-size: 0.2rem;
+            }
+        }
+        #animate7
+        {
+          transition: transform 2s;
+        }
+        #trigger7
+        {
+          position: absolute;
+          top: -40%;
         }
       }
       .app3
@@ -156,7 +216,7 @@
           width: 50%;
           height: 100%;
         }
-        img:nth-child(2)
+        img#animate8
         {
           position: absolute;
           left: 7%;
@@ -172,6 +232,21 @@
           left: 50%;
           top: 50%;
           box-shadow: 8px 6px 15px 1px rgba(0, 0, 0, 0.2);
+          @media screen and (max-width: $break-medium){
+              font-size: 0.6rem;
+            }
+          @media screen and (max-width: $break-small){
+              font-size: 0.2rem;
+            }
+        }
+        #animate8
+        {
+          transition: transform 2s;
+        }
+        #trigger8
+        {
+          position: absolute;
+          top: -40%;
         }
       }
     }
