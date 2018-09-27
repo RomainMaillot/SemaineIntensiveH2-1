@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 100;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%); }
+  #menu nav {
+    position: fixed;
+    width: 900px;
+    right: 20%;
+    bottom: 15%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8rem; }
+    #menu nav ul li {
+      margin: 50px 0; }
+      #menu nav ul li a {
+        color: grey;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        top: 20px; }
+      #menu nav ul li a:hover {
+        color: white; }
+        a#toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          color: white;
+          z-index: 1000; }
+          a#toggle img {
+            width: 50px;
+            height: 52px; }
+          a#toggle span {
+            position: relative;
+            right: 15px;
+            top: -5px;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s; }
+
+        a#toggle:hover span {
+          opacity: 0; }
+
+#project_container header {
+  background: url("../images/backgroundprojectheader.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+#project_container header > img{
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 200px; }
+
+#project_container main {
+  background: url("../images/backgroundprojectmain.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: black;
+  text-align: center;
+  }
+
+h2{
+  margin-top: 10%;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#textdescription {
+  border : solid 3px white;
+  width : 45%;
+  text-align: center;
+  margin: 3% auto ;
+  height: 20%;
+}
+
+#textdescription p{
+  margin-top: 3%;
+  color: white;
+}
+
+#whatispluslogo img {
+  top: 100px;
+  left: 200px;
+  width: 200px;
+}
+
+.scroll {
+  margin: 8% auto;
+}
+#project_container header .scroll p {
+    font-size: 0.8rem;
+    text-align: center;}
+#project_container header .scroll img {
+    height: 54px;
+    margin-left : 49%;
+    width: 33px; }
+
+h3{
+  font-size: 2rem;
+}
+#appinformations {
+  width: 50%;
+  height: 100vh;
+  margin : 0 auto;
+  background-color: white;
+  background-size: cover;
+  opacity: 0.46;
+}
+#appinformations p{
+  border : solid 5px black;
+  text-align: center;
+  margin:  5% auto ;
+  background-color: blue;
+  width: 20%;
+}
