@@ -1,0 +1,105 @@
+#about-us_container
+{
+background: white;
+padding-top :15%;
+.plant{
+	position:absolute;
+	margin-top : 15%;
+	margin-left :20%;
+	max-width : 50%;
+	height : auto;
+}
+.who{
+	color : black;
+	width : 800px;
+	height : auto;
+	margin-left : auto;
+	margin-right :auto;		
+	display:flex;
+	flex-direction : row;
+		h2{
+			font-size : 35px;
+			text-align : center ;		
+		  }		
+		p{
+			font-size: 15px;
+			padding-top : 4%;
+			font-family : "roboto";
+	         }
+	.photo{
+		width:30%;
+		height :50%;
+		margin-right : 5%;
+		}
+	}
+
+
+.why{
+	width : 400px;
+	height : 180px;
+	color : black;
+	margin-top: 3.5%;
+	margin-left : auto;
+	margin-right :auto;
+	h2{
+		font-size : 35px;
+		text-align : center ;
+	  }
+	p{
+		font-size: 15px;
+	    padding-top:4%
+
+	 }
+	}
+.projects{
+		color : black ;
+		width: 300px;
+		margin-top : 10%;
+		margin-left : auto;
+		margin-right :auto;
+		h2{
+				font-size : 35px;
+				text-align : center ;
+				padding-bottom : 4%;
+		 		 }
+		ul{
+		list-style : none;
+				li{
+						padding-left : 10%;
+						display : list-item;
+						font-size:15px;
+								a{
+			  					color : black;			
+					 	 		}
+		   }
+		  }
+		 }
+.contact{
+	color : black ;
+	width : 300px ;
+	margin-top : 5%;
+	margin-left : auto;
+	margin-right :auto;
+	padding-bottom : 5%;
+	h2{
+			font-size : 35px;
+			text-align : center ;
+			padding-bottom : 4%;
+	 }
+	ul{
+		list-style-image: url('../images/listpic2.png');
+		li{
+			font-size: 15px;
+			padding-left : 10%;
+			a{
+			color : black;
+			}
+	     }
+	  }
+	}
+.timeline
+{
+	margin-left : auto;
+	margin-right :auto;	
+}
+}

@@ -7,11 +7,7 @@
   background: black;
   opacity: 0.8;
   z-index: 100;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
   transform: translateX(100%); }
   #menu nav {
     position: fixed;
@@ -26,8 +22,6 @@
       margin: 50px 0; }
       #menu nav ul li a {
         color: grey;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
         transition: 1s; }
       #menu nav ul li a:hover {
         color: white; }
@@ -45,12 +39,91 @@ a#toggle {
     position: relative;
     right: 15px;
     top: -5px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
     transition: 0.2s; }
 
 a#toggle:hover span {
   opacity: 0; }
+
+#about-us_container {
+  background: white;
+  padding-top: 15%; }
+  #about-us_container .plant {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+    max-width: 50%;
+    height: auto; }
+  #about-us_container .who {
+    color: black;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row; }
+    #about-us_container .who h2 {
+      font-size: 35px;
+      text-align: center; }
+    #about-us_container .who p {
+      font-size: 15px;
+      padding-top: 4%;
+      font-family: "roboto"; }
+    #about-us_container .who .photo {
+      width: 30%;
+      height: 50%;
+      margin-right: 5%; }
+  #about-us_container .why {
+    width: 400px;
+    height: 180px;
+    color: black;
+    margin-top: 3.5%;
+    margin-left: auto;
+    margin-right: auto; }
+    #about-us_container .why h2 {
+      font-size: 35px;
+      text-align: center; }
+    #about-us_container .why p {
+      font-size: 15px;
+      padding-top: 4%; }
+  #about-us_container .projects {
+    color: black;
+    width: 300px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto; }
+    #about-us_container .projects h2 {
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 4%; }
+    #about-us_container .projects ul {
+      list-style: none; }
+      #about-us_container .projects ul li {
+        padding-left: 10%;
+        display: list-item;
+        font-size: 15px; }
+        #about-us_container .projects ul li a {
+          color: black; }
+  #about-us_container .contact {
+    color: black;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%; }
+    #about-us_container .contact h2 {
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 4%; }
+    #about-us_container .contact ul {
+      list-style-image: url("../images/listpic2.png"); }
+      #about-us_container .contact ul li {
+        font-size: 15px;
+        padding-left: 10%; }
+        #about-us_container .contact ul li a {
+          color: black; }
+  #about-us_container .timeline {
+    margin-left: auto;
+    margin-right: auto; }
 
 * {
   margin: 0;
@@ -63,3 +136,5 @@ body {
   body a {
     text-decoration: none;
     color: white; }
+
+/*# sourceMappingURL=style.css.map */
