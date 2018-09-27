@@ -1,5 +1,5 @@
 let bouton = document.getElementById('toggle'), menu = document.getElementById('menu'), count = 0,imgs = document.querySelectorAll('[class*="images"]'),title = document.querySelector('h2'),words = ["water","learn","grow","protection","care","heal"],
-lefts = ["30","30","30","10","30","30"], flowers = document.querySelectorAll('[class*="flower"]')
+lefts = ["30","30","30","10","30","30"]
 
 //menu animation
 bouton.addEventListener(
@@ -30,17 +30,6 @@ for(let i = 0;i<imgs.length;i++)
   )
 }
 
-//mooving flowers
-  tilt()
-
-function tilt()
-{
-  for (let i = 0; i < flowers.length; i++) {
-    setInterval(function(){flowers[i].style.transform = 'rotate(0.01turn)'},1000)
-    setInterval(function(){flowers[i].style.transform = 'rotate(-0.01turn)'},2000)
-  }
-}
-
 //scrolling animation
 var controller = new ScrollMagic.Controller();
 // build scene
@@ -57,4 +46,14 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger3"})
         // trigger animation by adding a css class
         .setClassToggle("#animate3", "enter")
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger4"})
+        // trigger animation by adding a css class
+        .setClassToggle("#animate4", "open")
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger4"})
+        // trigger animation by adding a css class
+        .setClassToggle("#animate5", "open1")
         .addTo(controller);

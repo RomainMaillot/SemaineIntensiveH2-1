@@ -131,180 +131,227 @@
   }
   main
   {
-    background: #F8F5E4;
-    overflow-x: hidden;
-    position: relative;
-    height: 280vh;
-
-    img.leaf
+    div.axes
     {
-      width: 100vw;
+      background: url('../images/axes_background.jpg');
+      background-size: 380vh;
+      background-position: right;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+      height: 200vh;
+      h2
+      {
+        font-family: 'mixtape', serif;
+        padding-top: 5vh;
+        font-size: 2rem;
+        width: 250px;
+        margin: 0 auto;
+      }
+      img.picto1
+      {
+        position: absolute;
+        top: 15%;
+        left: 60%;
+        width: 20%;
+      }
+      img.picto2
+      {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        width: 25%;
+        z-index: 1;
+      }
+      img.picto3
+      {
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        width: 25%;
+      }
+      img.picto_leaf
+      {
+        position: absolute;
+        top: 22%;
+        left: 2%;
+        width: 20%;
+      }
+      img.picto_leaf2
+      {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 20%;
+      }
+      img.picto_leaf3
+      {
+        position: absolute;
+        top: 45%;
+        right: 8%;
+        width: 20%;
+      }
+      img.picto_leaf4
+      {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        width: 20%;
+      }
+      img.picto_leaf5
+      {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 20%;
+      }
+      img.picto_leaf6
+      {
+        position: absolute;
+        top: 70%;
+        left: 8%;
+        width: 20%;
+      }
+      h3
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        transform: translateX(-280%);
+        left: 35%;
+        top: 25%;
+        box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 20%;
+          height: 1px;
+          bottom: 50%;
+          left: 100%;
+          border-bottom: 1px solid #707070;
+        }
+      }
+      #animate1
+      {
+        transition: transform 1s;
+      }
+      #animate2
+      {
+        transition: transform 1s;
+      }
+      #animate3
+      {
+        transition: transform 1s;
+      }
+      .enter
+      {
+        transform: translateX(-10%);
+      }
+      #trigger1
+      {
+        position: absolute;
+        top: 20%;
+      }
+      #trigger2
+      {
+        position: absolute;
+        top: 48%;
+      }
+      #trigger3
+      {
+        position: absolute;
+        top: 65%;
+      }
+      h4
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(250%);
+        box-shadow: -5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 40%;
+          height: 1px;
+          bottom: 50%;
+          left: -40%;
+          border-bottom: 1px solid #707070;
+        }
+      }
+      h5
+      {
+        position: absolute;
+        font-size: 1.8rem;
+        background: #FEFEFE;
+        padding: 2% 7%;
+        left: 30%;
+        top: 75%;
+        text-align: center;
+        transform: translateY(200%);
+        box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
+        letter-spacing: 3px;
+        &:after
+        {
+          content: "";
+          position: absolute;
+          width: 10%;
+          height: 1px;
+          bottom: 50%;
+          left: 100%;
+          border-bottom: 1px solid #707070;
+        }
+      }
     }
-    img.leaf2
+    div.kickstarter
     {
-      width: 100vw;
-      position: absolute;
-      bottom: 0;
-    }
-    img.creepers
-    {
-      width: 115vw;
-      position: absolute;
-      top: 12%;
-      left: -10vw;
-    }
-    img.picto1
-    {
-      position: absolute;
-      top: 20%;
-      left: 40%;
-      width: 25%;
-    }
-    img.picto2
-    {
-      position: absolute;
-      top: 45%;
-      left: 20%;
-      width: 20%;
-      z-index: 1;
-    }
-    img.picto3
-    {
-      position: absolute;
-      top: 67%;
-      left: 62%;
-      width: 25%;
-    }
-    img.flower1
-    {
-      position: absolute;
-      top: 13%;
-      left: 20%;
-      width: 10%;
-      transition: 0.5s ease-out;
-    }
-    img.flower2
-    {
-      position: absolute;
-      top: 30%;
-      left: 55%;
-      width: 15%;
-      transition: 0.5s ease-out;
-    }
-    img.flower3
-    {
-      position: absolute;
-      top: 31%;
-      left: 4%;
-      width: 10%;
-      transition: 0.5s ease-out;
-    }
-    img.flower4
-    {
-      position: absolute;
-      top: 56%;
-      left: 22%;
-      width: 8%;
-      transition: 0.5s ease-out;
-      z-index: 2;
-    }
-    img.flower5
-    {
-      position: absolute;
-      top: 61%;
-      left: 92%;
-      width: 9%;
-      transition: 0.5s ease-out;
-    }
-    img.fern1
-    {
-      position: absolute;
-      top: 45%;
-      left: 80%;
-      width: 9%;
-    }
-    img.fern2
-    {
-      position: absolute;
-      top: 52%;
-      left: 35%;
-      width: 13%;
-    }
-    img.fern3
-    {
-      position: absolute;
-      top: 77%;
-      left: 56%;
-      width: 13%;
-    }
-    h3
-    {
-      font-family: 'mixtape', serif;
-      position: absolute;
-      font-size: 2rem;
-      background: rgba(0,123,121,0.5);
-      border-radius: 50%;
-      padding: 8% 6%;
-      transform: translateX(150%);
-      left: 70%;
-      top: 22%;
-    }
-    #animate1
-    {
-      transition: transform 1s;
-    }
-    #animate2
-    {
-      transition: transform 1s;
-    }
-    #animate3
-    {
-      transition: transform 1s;
-    }
-    .enter
-    {
-      transform: translateX(-10%);
-      transform: rotate(-0.1turn);
-    }
-    #trigger1
-    {
-      position: absolute;
-      top: 20%;
-    }
-    #trigger2
-    {
-      position: absolute;
-      top: 48%;
-    }
-    #trigger3
-    {
-      position: absolute;
-      top: 65%;
-    }
-    h4
-    {
-      font-family: 'mixtape', serif;
-      position: absolute;
-      font-size: 2rem;
-      background: rgba(0,123,121,0.5);
-      border-radius: 50%;
-      padding: 6%;
-      left: 2%;
-      top: 50%;
-      transform: translateX(-150%);
-    }
-    h5
-    {
-      font-family: 'mixtape', serif;
-      position: absolute;
-      font-size: 2rem;
-      background: rgba(0,123,121,0.5);
-      border-radius: 50%;
-      padding: 7% 6%;
-      left: 40%;
-      top: 68%;
-      text-align: center;
-      transform: translateY(150%);
+      padding-top: 8vh;
+      height: 80vh;
+      position: relative;
+      overflow: hidden;
+      .kickstarter_logo
+      {
+        width: 600px;
+        margin: 0 auto;
+      }
+      img.left_fern
+      {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 75%;
+      }
+      img.right_fern
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 75%;
+      }
+      #animate4
+      {
+        transition: transform 2s;
+      }
+      #animate5
+      {
+        transition: transform 2s;
+      }
+      .open
+      {
+        transform: translateX(-30%) translateY(28%) scale(0.8);
+      }
+      .open1
+      {
+        transform: translateX(30%) translateY(28%) scale(0.8);
+      }
     }
   }
 }
