@@ -22,8 +22,12 @@
     text-align: center;
     font-weight: bold;
     font-size: 8rem; }
+    @media screen and (max-width: 1024px) {
+      #menu nav {
+        right: 5%; } }
     #menu nav ul li {
-      margin: 50px 0; }
+      margin: 50px 0;
+      list-style: none; }
       #menu nav ul li a {
         color: grey;
         -webkit-transition: 1s;
@@ -58,6 +62,9 @@ a#toggle:hover span {
   background-position: center;
   background-size: cover;
   height: 100vh; }
+  @media screen and (max-width: 1024px) {
+    #homepage_container header {
+      height: 100vh; } }
   #homepage_container header > img {
     position: relative;
     top: 20px;
@@ -76,10 +83,23 @@ a#toggle:hover span {
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container header .header_content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 80vh; } }
     #homepage_container header .header_content .phone_content {
       width: 25%;
       height: 100%;
       position: relative; }
+      @media screen and (max-width: 1024px) {
+        #homepage_container header .header_content .phone_content {
+          width: 30%; } }
       #homepage_container header .header_content .phone_content p {
         position: absolute;
         top: 40%;
@@ -87,6 +107,10 @@ a#toggle:hover span {
         text-align: center;
         color: #EAE5AD;
         font-family: 'mixtape', serif; }
+        @media screen and (max-width: 1024px) {
+          #homepage_container header .header_content .phone_content p {
+            top: 30%;
+            left: 15%; } }
       #homepage_container header .header_content .phone_content .phone {
         width: 100%;
         position: relative; }
@@ -103,6 +127,9 @@ a#toggle:hover span {
       flex-direction: column;
       color: white;
       text-align: center; }
+      @media screen and (max-width: 1024px) {
+        #homepage_container header .header_content .scroll {
+          display: none; } }
       #homepage_container header .header_content .scroll p {
         font-size: 0.8rem; }
       #homepage_container header .header_content .scroll img {
@@ -113,6 +140,10 @@ a#toggle:hover span {
       -ms-flex-item-align: center;
       align-self: center;
       position: relative; }
+      #homepage_container header .header_content .wheel .big {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
       #homepage_container header .header_content .wheel img {
         width: 100%;
         position: relative; }
@@ -120,32 +151,62 @@ a#toggle:hover span {
         position: absolute;
         top: -10%;
         left: 45%;
-        width: 10%; }
+        width: 10%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel a img.images2 {
         position: absolute;
         top: 17%;
         right: 3%;
-        width: 13%; }
+        width: 13%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel a img.images3 {
         position: absolute;
         bottom: 24%;
         right: 0;
-        width: 13%; }
+        width: 13%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel a img.images4 {
         position: absolute;
         bottom: -7%;
         left: 43%;
-        width: 15%; }
+        width: 15%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel a img.images5 {
         position: absolute;
         bottom: 26%;
         left: 0;
-        width: 13%; }
+        width: 13%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel a img.images6 {
         position: absolute;
         top: 15%;
         left: 0;
-        width: 13%; }
+        width: 13%;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
       #homepage_container header .header_content .wheel h2 {
         position: absolute;
         margin-bottom: 50px;
@@ -158,6 +219,9 @@ a#toggle:hover span {
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s; }
+        @media screen and (max-width: 1024px) {
+          #homepage_container header .header_content .wheel h2 {
+            font-size: 2.8rem; } }
 
 #homepage_container main div.axes {
   background: url("../images/axes_background.jpg");
@@ -167,17 +231,27 @@ a#toggle:hover span {
   overflow-y: hidden;
   position: relative;
   height: 200vh; }
+  @media screen and (max-width: 1024px) {
+    #homepage_container main div.axes {
+      height: 100vh; } }
   #homepage_container main div.axes h2 {
     font-family: 'mixtape', serif;
     padding-top: 5vh;
     font-size: 2rem;
     width: 250px;
     margin: 0 auto; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.axes h2 {
+        font-size: 3rem;
+        width: 300px; } }
   #homepage_container main div.axes img.picto1 {
     position: absolute;
     top: 15%;
     left: 60%;
     width: 20%; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.axes img.picto1 {
+        left: 65%; } }
   #homepage_container main div.axes img.picto2 {
     position: absolute;
     top: 45%;
@@ -189,6 +263,9 @@ a#toggle:hover span {
     top: 70%;
     left: 45%;
     width: 25%; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.axes img.picto3 {
+        left: 55%; } }
   #homepage_container main div.axes img.picto_leaf {
     position: absolute;
     top: 22%;
@@ -232,6 +309,9 @@ a#toggle:hover span {
     -webkit-box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     letter-spacing: 3px; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.axes h3 {
+        top: 20%; } }
     #homepage_container main div.axes h3:after {
       content: "";
       position: absolute;
@@ -306,6 +386,12 @@ a#toggle:hover span {
     -webkit-box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     letter-spacing: 3px; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.axes h5 {
+        left: 35%;
+        -webkit-transform: translateY(300%);
+        -ms-transform: translateY(300%);
+        transform: translateY(300%); } }
     #homepage_container main div.axes h5:after {
       content: "";
       position: absolute;
@@ -320,6 +406,9 @@ a#toggle:hover span {
   height: 80vh;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    #homepage_container main div.kickstarter {
+      height: 60vh; } }
   #homepage_container main div.kickstarter .kickstarter_logo {
     width: 600px;
     margin: 0 auto; }
@@ -328,11 +417,17 @@ a#toggle:hover span {
     left: 0;
     bottom: 0;
     width: 75%; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.kickstarter img.left_fern {
+        width: 120%; } }
   #homepage_container main div.kickstarter img.right_fern {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 75%; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.kickstarter img.right_fern {
+        width: 120%; } }
   #homepage_container main div.kickstarter #animate4 {
     -webkit-transition: -webkit-transform 2s;
     transition: -webkit-transform 2s;

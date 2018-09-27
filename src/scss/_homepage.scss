@@ -6,6 +6,9 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    @media screen and (max-width: $break-medium){
+        height: 100vh;
+      }
     &>img
     {
       position: relative;
@@ -21,11 +24,19 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      @media screen and (max-width: $break-medium){
+          flex-direction: column;
+          align-items: center;
+          height: 80vh;
+        }
       .phone_content
       {
         width: 25%;
         height: 100%;
         position: relative;
+        @media screen and (max-width: $break-medium){
+            width: 30%;
+          }
         p
         {
           position: absolute;
@@ -34,6 +45,10 @@
           text-align: center;
           color: #EAE5AD;
           font-family: 'mixtape', serif;
+          @media screen and (max-width: $break-medium){
+              top: 30%;
+              left: 15%;
+            }
         }
         .phone
         {
@@ -49,6 +64,9 @@
         flex-direction: column;
         color: white;
         text-align: center;
+        @media screen and (max-width: $break-medium){
+            display: none;
+          }
         p
         {
           font-size: 0.8rem;
@@ -64,6 +82,10 @@
         width: 40%;
         align-self: center;
         position: relative;
+        .big
+        {
+          transform: scale(1.1);
+        }
         img
         {
           width: 100%;
@@ -77,6 +99,7 @@
             top: -10%;
             left: 45%;
             width: 10%;
+            transition: transform 0.5s;
           }
           img.images2
           {
@@ -84,6 +107,7 @@
             top: 17%;
             right: 3%;
             width: 13%;
+            transition: transform 0.5s;
           }
           img.images3
           {
@@ -91,6 +115,7 @@
             bottom: 24%;
             right: 0;
             width: 13%;
+            transition: transform 0.5s;
           }
           img.images4
           {
@@ -98,6 +123,7 @@
             bottom: -7%;
             left: 43%;
             width: 15%;
+            transition: transform 0.5s;
           }
           img.images5
           {
@@ -105,6 +131,7 @@
             bottom: 26%;
             left: 0;
             width: 13%;
+            transition: transform 0.5s;
           }
           img.images6
           {
@@ -112,6 +139,7 @@
             top: 15%;
             left: 0;
             width: 13%;
+            transition: transform 0.5s;
           }
         }
         h2
@@ -125,6 +153,9 @@
           font-size: 4rem;
           text-transform: uppercase;
           transition: 0.5s;
+          @media screen and (max-width: $break-medium){
+              font-size: 2.8rem;
+            }
         }
       }
     }
@@ -140,6 +171,9 @@
       overflow-y: hidden;
       position: relative;
       height: 200vh;
+      @media screen and (max-width: $break-medium){
+          height: 100vh;
+        }
       h2
       {
         font-family: 'mixtape', serif;
@@ -147,6 +181,10 @@
         font-size: 2rem;
         width: 250px;
         margin: 0 auto;
+        @media screen and (max-width: $break-medium){
+            font-size: 3rem;
+            width: 300px;
+          }
       }
       img.picto1
       {
@@ -154,6 +192,9 @@
         top: 15%;
         left: 60%;
         width: 20%;
+        @media screen and (max-width: $break-medium){
+            left: 65%;
+          }
       }
       img.picto2
       {
@@ -169,6 +210,9 @@
         top: 70%;
         left: 45%;
         width: 25%;
+        @media screen and (max-width: $break-medium){
+            left: 55%;
+          }
       }
       img.picto_leaf
       {
@@ -223,6 +267,9 @@
         top: 25%;
         box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
         letter-spacing: 3px;
+        @media screen and (max-width: $break-medium){
+            top: 20%;
+          }
         &:after
         {
           content: "";
@@ -299,6 +346,10 @@
         transform: translateY(200%);
         box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.2);
         letter-spacing: 3px;
+        @media screen and (max-width: $break-medium){
+            left: 35%;
+            transform: translateY(300%);
+          }
         &:after
         {
           content: "";
@@ -317,6 +368,9 @@
       height: 80vh;
       position: relative;
       overflow: hidden;
+      @media screen and (max-width: $break-medium){
+          height: 60vh;
+        }
       .kickstarter_logo
       {
         width: 600px;
@@ -328,6 +382,9 @@
         left: 0;
         bottom: 0;
         width: 75%;
+        @media screen and (max-width: $break-medium){
+            width: 120%;
+          }
       }
       img.right_fern
       {
@@ -335,6 +392,9 @@
         right: 0;
         bottom: 0;
         width: 75%;
+        @media screen and (max-width: $break-medium){
+            width: 120%;
+          }
       }
       #animate4
       {
