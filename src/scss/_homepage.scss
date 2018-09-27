@@ -12,6 +12,9 @@
       top: 20px;
       left: 50px;
       width: 200px;
+      @media screen and (max-width: $break-small){
+          width: 50px;
+        }
     }
     .header_content
     {
@@ -34,6 +37,9 @@
         @media screen and (max-width: $break-medium){
             width: 30%;
           }
+        @media screen and (max-width: $break-small){
+            width: 40%;
+          }
         p
         {
           position: absolute;
@@ -43,8 +49,13 @@
           color: #EAE5AD;
           font-family: 'mixtape', serif;
           @media screen and (max-width: $break-medium){
-              top: 30%;
-              left: 15%;
+              top: 27%;
+              left: 7%;
+            }
+          @media screen and (max-width: $break-small){
+              top: 20%;
+              font-size: 0.5rem;
+              left: 16%;
             }
         }
         .phone
@@ -154,10 +165,10 @@
           text-transform: uppercase;
           transition: 0.5s;
           @media screen and (max-width: $break-medium){
-              font-size: 2.8rem;
+              font-size: 2rem;
             }
           @media screen and (max-width: $break-small){
-              font-size: 3rem;
+              font-size: 1.5rem;
             }
         }
       }
@@ -188,6 +199,10 @@
             font-size: 3rem;
             width: 300px;
           }
+        @media screen and (max-width: $break-small){
+            font-size: 2rem;
+            width: 200px;
+          }
       }
       img.picto1
       {
@@ -197,6 +212,9 @@
         width: 20%;
         @media screen and (max-width: $break-medium){
             left: 65%;
+          }
+        @media screen and (max-width: $break-small){
+            left: 70%;
           }
       }
       img.picto2
@@ -230,6 +248,9 @@
         top: 10%;
         left: 10%;
         width: 20%;
+        @media screen and (max-width: $break-small){
+            top: 18%;
+          }
       }
       img.picto_leaf3
       {
@@ -272,6 +293,9 @@
         letter-spacing: 3px;
         @media screen and (max-width: $break-medium){
             top: 20%;
+          }
+        @media screen and (max-width: $break-small){
+            font-size: 0.8rem;
           }
         &:after
         {
@@ -326,6 +350,9 @@
         transform: translateX(250%);
         box-shadow: -5px 6px 6px 1px rgba(0, 0, 0, 0.2);
         letter-spacing: 3px;
+        @media screen and (max-width: $break-small){
+            font-size: 0.8rem;
+          }
         &:after
         {
           content: "";
@@ -353,6 +380,10 @@
             left: 35%;
             transform: translateY(300%);
           }
+          @media screen and (max-width: $break-small){
+              font-size: 0.8rem;
+              transform: translateY(450%);
+            }
         &:after
         {
           content: "";
@@ -371,6 +402,7 @@
       height: 80vh;
       position: relative;
       overflow: hidden;
+      text-align: center;
       @media screen and (max-width: $break-medium){
           height: 60vh;
         }
@@ -378,6 +410,15 @@
       {
         width: 600px;
         margin: 0 auto;
+        @media screen and (max-width: $break-small){
+            width: 300px;
+          }
+        &>img
+        {
+          @media screen and (max-width: $break-small){
+              width: 300px;
+            }
+        }
       }
       img.left_fern
       {
@@ -453,13 +494,28 @@
           border-radius: 5px;
           padding: 15px 20px;
           color: #707070;
+          transition: all 1s;
+          &:hover
+          {
+            background: #707070;
+            color: #EAE5AD;
+          }
         }
+        @media screen and (max-width: $break-medium){
+            font-size: 0.8rem;
+          }
+        @media screen and (max-width: $break-small){
+            font-size: 0.5rem;
+          }
         .loading_bar_image
         {
           img:nth-child(1)
           {
             width: 100%;
             position: absolute;
+            @media screen and (max-width: $break-small){
+                left: 0;
+              }
           }
           img:nth-child(2)
           {
@@ -468,6 +524,10 @@
             position: absolute;
             @media screen and (max-width: $break-medium){
                 height: 8%;
+              }
+            @media screen and (max-width: $break-small){
+                left: 0;
+                height: 5%;
               }
           }
           img:nth-child(3)
@@ -478,6 +538,9 @@
             left: 70%;
             @media screen and (max-width: $break-medium){
                 top: 4%;
+              }
+            @media screen and (max-width: $break-small){
+                top: 12%;
               }
           }
         }

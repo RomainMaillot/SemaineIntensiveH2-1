@@ -24,7 +24,13 @@
     font-size: 8rem; }
     @media screen and (max-width: 1024px) {
       #menu nav {
-        right: 5%; } }
+        font-size: 6rem;
+        right: -8%; } }
+    @media screen and (max-width: 400px) {
+      #menu nav {
+        font-size: 3rem;
+        right: -70%;
+        top: 25%; } }
     #menu nav ul li {
       margin: 50px 0;
       list-style: none; }
@@ -46,6 +52,10 @@ a#toggle {
   a#toggle img {
     width: 50px;
     height: 52px; }
+    @media screen and (max-width: 400px) {
+      a#toggle img {
+        width: 20px;
+        height: 22px; } }
   a#toggle span {
     position: relative;
     right: 15px;
@@ -53,6 +63,10 @@ a#toggle {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
+    @media screen and (max-width: 400px) {
+      a#toggle span {
+        font-size: 0.5rem;
+        right: 10px; } }
 
 a#toggle:hover span {
   opacity: 0; }
@@ -67,6 +81,9 @@ a#toggle:hover span {
     top: 20px;
     left: 50px;
     width: 200px; }
+    @media screen and (max-width: 400px) {
+      #homepage_container header > img {
+        width: 50px; } }
   #homepage_container header .header_content {
     margin-top: 100px;
     margin-left: 10%;
@@ -97,6 +114,9 @@ a#toggle:hover span {
       @media screen and (max-width: 1024px) {
         #homepage_container header .header_content .phone_content {
           width: 30%; } }
+      @media screen and (max-width: 400px) {
+        #homepage_container header .header_content .phone_content {
+          width: 40%; } }
       #homepage_container header .header_content .phone_content p {
         position: absolute;
         top: 40%;
@@ -106,8 +126,13 @@ a#toggle:hover span {
         font-family: 'mixtape', serif; }
         @media screen and (max-width: 1024px) {
           #homepage_container header .header_content .phone_content p {
-            top: 30%;
-            left: 15%; } }
+            top: 27%;
+            left: 7%; } }
+        @media screen and (max-width: 400px) {
+          #homepage_container header .header_content .phone_content p {
+            top: 20%;
+            font-size: 0.5rem;
+            left: 16%; } }
       #homepage_container header .header_content .phone_content .phone {
         width: 100%;
         position: relative; }
@@ -221,10 +246,10 @@ a#toggle:hover span {
         transition: 0.5s; }
         @media screen and (max-width: 1024px) {
           #homepage_container header .header_content .wheel h2 {
-            font-size: 2.8rem; } }
+            font-size: 2rem; } }
         @media screen and (max-width: 400px) {
           #homepage_container header .header_content .wheel h2 {
-            font-size: 3rem; } }
+            font-size: 1.5rem; } }
 
 #homepage_container main div.axes {
   background: url("../images/axes_background.jpg");
@@ -247,6 +272,10 @@ a#toggle:hover span {
       #homepage_container main div.axes h2 {
         font-size: 3rem;
         width: 300px; } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes h2 {
+        font-size: 2rem;
+        width: 200px; } }
   #homepage_container main div.axes img.picto1 {
     position: absolute;
     top: 15%;
@@ -255,6 +284,9 @@ a#toggle:hover span {
     @media screen and (max-width: 1024px) {
       #homepage_container main div.axes img.picto1 {
         left: 65%; } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes img.picto1 {
+        left: 70%; } }
   #homepage_container main div.axes img.picto2 {
     position: absolute;
     top: 45%;
@@ -279,6 +311,9 @@ a#toggle:hover span {
     top: 10%;
     left: 10%;
     width: 20%; }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes img.picto_leaf2 {
+        top: 18%; } }
   #homepage_container main div.axes img.picto_leaf3 {
     position: absolute;
     top: 45%;
@@ -315,6 +350,9 @@ a#toggle:hover span {
     @media screen and (max-width: 1024px) {
       #homepage_container main div.axes h3 {
         top: 20%; } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes h3 {
+        font-size: 0.8rem; } }
     #homepage_container main div.axes h3:after {
       content: "";
       position: absolute;
@@ -367,6 +405,9 @@ a#toggle:hover span {
     -webkit-box-shadow: -5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     box-shadow: -5px 6px 6px 1px rgba(0, 0, 0, 0.2);
     letter-spacing: 3px; }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes h4 {
+        font-size: 0.8rem; } }
     #homepage_container main div.axes h4:after {
       content: "";
       position: absolute;
@@ -395,6 +436,12 @@ a#toggle:hover span {
         -webkit-transform: translateY(300%);
         -ms-transform: translateY(300%);
         transform: translateY(300%); } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.axes h5 {
+        font-size: 0.8rem;
+        -webkit-transform: translateY(450%);
+        -ms-transform: translateY(450%);
+        transform: translateY(450%); } }
     #homepage_container main div.axes h5:after {
       content: "";
       position: absolute;
@@ -408,13 +455,20 @@ a#toggle:hover span {
   padding-top: 8vh;
   height: 80vh;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
   @media screen and (max-width: 1024px) {
     #homepage_container main div.kickstarter {
       height: 60vh; } }
   #homepage_container main div.kickstarter .kickstarter_logo {
     width: 600px;
     margin: 0 auto; }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.kickstarter .kickstarter_logo {
+        width: 300px; } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.kickstarter .kickstarter_logo > img {
+        width: 300px; } }
   #homepage_container main div.kickstarter img.left_fern {
     position: absolute;
     left: 0;
@@ -488,10 +542,25 @@ a#toggle:hover span {
       border: 2px solid #707070;
       border-radius: 5px;
       padding: 15px 20px;
-      color: #707070; }
+      color: #707070;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+      #homepage_container main div.kickstarter .loading_bar a:hover {
+        background: #707070;
+        color: #EAE5AD; }
+    @media screen and (max-width: 1024px) {
+      #homepage_container main div.kickstarter .loading_bar {
+        font-size: 0.8rem; } }
+    @media screen and (max-width: 400px) {
+      #homepage_container main div.kickstarter .loading_bar {
+        font-size: 0.5rem; } }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(1) {
       width: 100%;
       position: absolute; }
+      @media screen and (max-width: 400px) {
+        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(1) {
+          left: 0; } }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
       width: 80%;
       height: 6vh;
@@ -499,6 +568,10 @@ a#toggle:hover span {
       @media screen and (max-width: 1024px) {
         #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
           height: 8%; } }
+      @media screen and (max-width: 400px) {
+        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
+          left: 0;
+          height: 5%; } }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
       width: 15%;
       position: absolute;
@@ -507,6 +580,9 @@ a#toggle:hover span {
       @media screen and (max-width: 1024px) {
         #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
           top: 4%; } }
+      @media screen and (max-width: 400px) {
+        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
+          top: 12%; } }
 
 footer {
   display: -webkit-box;
@@ -525,6 +601,9 @@ footer {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+  @media screen and (max-width: 400px) {
+    footer {
+      font-size: 0.8rem; } }
   footer img.logo {
     width: 10%;
     position: absolute; }
@@ -540,9 +619,19 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 1024px) {
+      footer .contact {
+        width: 20%; } }
+    @media screen and (max-width: 400px) {
+      footer .contact {
+        width: 28%; } }
     footer .contact img {
       width: 20px;
       height: 20px; }
+      @media screen and (max-width: 400px) {
+        footer .contact img {
+          width: 10px;
+          height: 10px; } }
 
 * {
   margin: 0;
