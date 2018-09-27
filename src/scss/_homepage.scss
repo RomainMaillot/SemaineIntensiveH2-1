@@ -513,20 +513,18 @@
           {
             width: 100%;
             position: absolute;
-            @media screen and (max-width: $break-small){
-                left: 0;
-              }
+            left: 0;
           }
           img:nth-child(2)
           {
             width: 80%;
             height: 6vh;
+            left: 0;
             position: absolute;
             @media screen and (max-width: $break-medium){
                 height: 8%;
               }
             @media screen and (max-width: $break-small){
-                left: 0;
                 height: 5%;
               }
           }

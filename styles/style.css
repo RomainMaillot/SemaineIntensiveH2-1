@@ -557,20 +557,18 @@ a#toggle:hover span {
         font-size: 0.5rem; } }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(1) {
       width: 100%;
-      position: absolute; }
-      @media screen and (max-width: 400px) {
-        #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(1) {
-          left: 0; } }
+      position: absolute;
+      left: 0; }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
       width: 80%;
       height: 6vh;
+      left: 0;
       position: absolute; }
       @media screen and (max-width: 1024px) {
         #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
           height: 8%; } }
       @media screen and (max-width: 400px) {
         #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(2) {
-          left: 0;
           height: 5%; } }
     #homepage_container main div.kickstarter .loading_bar .loading_bar_image img:nth-child(3) {
       width: 15%;
