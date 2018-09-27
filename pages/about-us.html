@@ -2,12 +2,26 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Modèle de page</title>
-    <meta name="description" content="Ceci est la description de ma page">
+    <title>About me</title>
+    <meta name="description" content="This is the description of my page"/>
+    <link rel="shortcut icon" href="../images/favicon.png"/>
     <link rel="stylesheet" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div id="about-us_container">
+      <a href="#" id="toggle"><img src="../images/leaf.png" alt="leaf logo"><span>menu</span></a>
+      <div id="menu" class="none">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Homepage</a></li>
+            <li><a href="project.html">The project</a></li>
+            <li><a href="https://www.kickstarter.com/projects/benkling/dryp-an-app-that-keeps-your-plants-alive-and-happy?ref=discovery">Kickstarter</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img class="logo" src="../images/logo.png" alt="DRYP logo">
+      <main>
         <img src="../images/plant2.png" class="plant">
         <div class="who">
             <img src="../images/photo.png" class="photo">
@@ -45,11 +59,22 @@
               <li class="list">My Tumbler :<a href="http://benkling.tumblr.com">Benkling.tumblr.com</a></li>
             </ul>
         </div>
-    <div class="timeline" align="center">
-      <a class="twitter-timeline" data-width="700" data-height="500" data-link-color="#19CF86" href="https://twitter.com/benkling?ref_src=twsrc%5Etfw">Tweets by benkling</a> 
-    </div>
-    </div>
-    <script type="text/javascript" src="scripts/app.js"></script>
+        <div class="timeline" align="center">
+          <a class="twitter-timeline" data-width="700" data-height="500" data-link-color="#19CF86" href="https://twitter.com/benkling?ref_src=twsrc%5Etfw">Tweets by benkling</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact">
+        <a href="#"><img src="../images/facebook.png" alt="logo facebook"></a>
+        <a href="#"><img src="../images/twitter.png" alt="logo twitter"></a>
+        <a href="#"><img src="../images/instagram.svg" alt="logo instagram"></a>
+        <a href="#">Contact us</a>
+      </div>
+      <img class="logo" src="../images/logo.png" alt="DRYP logo">
+      <a href="#">NewsLetter</a>
+    </footer>
+    <script type="text/javascript" src="../scripts/app.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>

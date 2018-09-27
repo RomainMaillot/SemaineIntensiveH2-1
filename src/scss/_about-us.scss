@@ -1,112 +1,156 @@
 #about-us_container
 {
-background: white;
-padding-top :15%;
-.plant{
-	position:absolute;
-	margin-top : 15%;
-	margin-left :20%;
-	max-width : 50%;
-	height : auto;
-	@media (min-width: 768px) and 
-       (-webkit-min-device-pixel-ratio: 2), 
-       (min-width: 768px) and 
-       (min-resolution: 192dpi) { 
-       .plant{display:none;}
-
+	background: #343434;
+a#toggle
+{
+	background: #343434;
+	padding: 15px;
+	border-radius: 5px;
+	top: 0;
 }
-}
-.who{
-	color : black;
-	width : 800px;
-	height : auto;
-	margin-left : auto;
-	margin-right :auto;		
-	display:flex;
-	flex-direction : row;
-		h2{
-			font-size : 35px;
-			text-align : center ;		
-		  }		
-		p{
-			font-size: 15px;
-			padding-top : 4%;
-			font-family : "roboto";
-	         }
-	.photo{
-		width:30%;
-		height :50%;
-		margin-right : 5%;
+img.logo
+{
+	position: relative;
+	top: 20px;
+	left: 50px;
+	width: 200px;
+	@media screen and (max-width: $break-small){
+			width: 50px;
 		}
+}
+h2
+{
+	font-family: "mixtape", serif;
+	font-size: 35px;
+	@media screen and (max-width: $break-small){
+			font-size: 1.8rem;
+		}
+}
+p
+{
+	font-size: 15px;
+	@media screen and (max-width: $break-small){
+			font-size: 0.6rem;
+		}
+}
+main
+{
+	margin-top: 2%;
+	padding-top: 5%;
+	background: white;
+	@media screen and (max-width: $break-medium){
+			margin-top: 4%;
+		}
+	@media screen and (max-width: $break-small){
+			margin-top: 10%;
+		}
+	.plant{
+		position:absolute;
+		margin-top : 15%;
+		margin-left :20%;
+		max-width : 50%;
+		height : auto;
+		@media screen and (max-width: $break-medium){
+				display: none;
+			}
+
 	}
-
-
-.why{
-	width : 400px;
-	height : 180px;
-	color : black;
-	margin-top: 3.5%;
-	margin-left : auto;
-	margin-right :auto;
-	h2{
-		font-size : 35px;
-		text-align : center ;
-	  }
-	p{
-		font-size: 15px;
-	    padding-top:4%
-
-	 }
-	}
-.projects{
-		color : black ;
-		width: 300px;
-		margin-top : 10%;
+	.who{
+		color : black;
+		width : 800px;
+		height : auto;
 		margin-left : auto;
 		margin-right :auto;
+		display:flex;
+		flex-direction : row;
+		@media screen and (max-width: $break-medium){
+				width: 80%;
+			}
+			h2{
+				text-align : center ;
+			  }
+			p{
+				padding-top : 4%;
+				font-family : "roboto";
+		         }
+		.photo{
+			width:30%;
+			height :50%;
+			margin-right : 5%;
+			}
+		}
+
+
+	.why{
+		width : 400px;
+		height : 180px;
+		color : black;
+		margin-top: 3.5%;
+		margin-left : auto;
+		margin-right :auto;
+		@media screen and (max-width: $break-small){
+				height: 40%;
+			}
 		h2{
-				font-size : 35px;
+			text-align : center ;
+		  }
+		p{
+		    padding-top:4%;
+				@media screen and (max-width: $break-small){
+						width: 80%;
+						margin: 0 auto;
+					}
+		 }
+		}
+	.projects{
+			color : black ;
+			width: 300px;
+			margin-top : 10%;
+			margin-left : auto;
+			margin-right :auto;
+			h2{
+					text-align : center ;
+					padding-bottom : 4%;
+			 		 }
+			ul{
+			list-style : none;
+					li{
+							padding-left : 10%;
+							display : list-item;
+							font-size:15px;
+									a{
+				  					color : black;
+						 	 		}
+			   }
+			  }
+			 }
+	.contact{
+		color : black ;
+		width : 300px ;
+		margin-top : 5%;
+		margin-left : auto;
+		margin-right :auto;
+		padding-bottom : 5%;
+		h2{
 				text-align : center ;
 				padding-bottom : 4%;
-		 		 }
-		ul{
-		list-style : none;
-				li{
-						padding-left : 10%;
-						display : list-item;
-						font-size:15px;
-								a{
-			  					color : black;			
-					 	 		}
-		   }
-		  }
 		 }
-.contact{
-	color : black ;
-	width : 300px ;
-	margin-top : 5%;
-	margin-left : auto;
-	margin-right :auto;
-	padding-bottom : 5%;
-	h2{
-			font-size : 35px;
-			text-align : center ;
-			padding-bottom : 4%;
-	 }
-	ul{
-		list-style-image: url('../images/listpic2.png');
-		li{
-			font-size: 15px;
-			padding-left : 10%;
-			a{
-			color : black;
-			}
-	     }
-	  }
+		ul{
+			list-style-image: url('../images/listpic2.png');
+			li{
+				font-size: 15px;
+				padding-left : 10%;
+				a{
+				color : black;
+				}
+		     }
+		  }
+		}
+	.timeline
+	{
+		margin-left : auto;
+		margin-right :auto;
 	}
-.timeline
-{
-	margin-left : auto;
-	margin-right :auto;	
 }
+
 }

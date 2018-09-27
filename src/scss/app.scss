@@ -1,6 +1,11 @@
+$break-small: 400px;
+$break-medium: 1024px;
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "menu";
-@import "about-us" ;
+@import "homepage";
+@import "footer";
+@import "project";
+@import "about-us";
 
 *{
     margin:0;
@@ -8,11 +13,16 @@
 }
 body{
     margin:0;
-    background: #00b894;
     font-family: 'Roboto', sans-serif;
     a
     {
       text-decoration: none;
       color: white;
     }
+}
+@font-face {
+font-family: 'mixtape';
+src: url('../font/MIXTMK_T.otf');
+font-weight: normal;
+font-style: normal;
 }

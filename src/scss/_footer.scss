@@ -1,0 +1,41 @@
+footer
+{
+  display: flex;
+  flex-direction: row;
+  background: #343434;
+  color: white;
+  position: relative;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: $break-small){
+      font-size: 0.8rem;
+    }
+  img.logo
+  {
+    width: 10%;
+    position: absolute;
+  }
+  .contact
+  {
+    display: flex;
+    flex-direction: row;
+    width: 14%;
+    justify-content: space-between;
+    @media screen and (max-width: $break-medium){
+        width: 20%;
+      }
+    @media screen and (max-width: $break-small){
+        width: 28%;
+      }
+    img
+    {
+      width: 20px;
+      height: 20px;
+      @media screen and (max-width: $break-small){
+          width: 10px;
+          height: 10px;
+        }
+    }
+  }
+}
